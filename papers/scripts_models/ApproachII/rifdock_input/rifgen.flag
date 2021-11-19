@@ -1,0 +1,80 @@
+-rifgen::rif_type RotScore64
+
+-rifgen:extra_rotamers false
+-rifgen:extra_rif_rotamers true
+
+-rif_accum_scratch_size_M 24000
+
+-rifgen:target           rifdock_input/COVID19_target.pdb
+-rifgen:target_res       rifdock_input/target_residues.list
+-tuning_file             rifdock_input/tuning.x
+#-rifgen:apores_must_satisfy_req false
+
+#-rifgen::hotspot_groups  input/TYR.pdb input/ARG.pdb
+#-rifgen::hotspot_sample_cart_bound 1.0
+#-rifgen::hotspot_sample_angle_bound 10
+#-rifgen::hotspot_nsamples 500000
+#-rifgen::single_file_hotspots_insertion false
+
+-renumber_pdb
+
+-hash_cart_resl              0.7
+-hash_angle_resl            14.0
+
+
+#-rifgen::rf_oversample 2
+
+# hour or so
+
+# ~ 250m, 650m, 2.5g
+-rifgen::rosetta_field_resl 0.25
+-rifgen::search_resolutions 3.0 1.5 0.75
+#-rifgen::rosetta_field_resl 0.125
+#-rifgen::search_resolutions 4.0 2.0 1.0 0.5
+#-rifgen::rosetta_field_resl 0.125
+#-rifgen::search_resolutions 3.0 1.5 0.75 0.375
+
+-rifgen:score_threshold -0.8
+#-rifgen:score_threshold_polar -0.4
+#-rifgen::cationpi_bonus_weights 6.0
+#-rifgen::min_cationpi_score -0.1
+-rifgen:hbond_weight 1.5           # max score per-hbond
+-rifgen:upweight_multi_hbond 1.0   # extra score factor for bidentate hbonds
+
+-rifgen:data_cache_dir    /home/longxing/Rifdock/rifdock_cache_dir/scheme_data_exrots2
+-rifgen:outdir            rifgen
+-rifgen:outfile           rif_req_Tie2_sca0.8.rif.gz
+
+-rifgen:score_cut_adjust 0.8
+
+-rifgen:apores VAL ILE LEU MET PHE TRP
+-rifgen:donres SER THR TYR     GLN     ASN HIS HIS_D TRP # roughly in decreasing order of sample size REMOVED
+-rifgen:accres SER THR TYR GLU GLN ASP ASN HIS HIS_D
+
+
+-hbond_cart_sample_hack_range 1.0
+-hbond_cart_sample_hack_resl  0.33
+-long_hbond_fudge_distance 0.5
+
+
+-rifgen:tip_tol_deg        60.0 # for now, do either 60 or 36
+-rifgen:rot_samp_resl       6.0
+
+
+-rifgen:rif_apo_dump_fraction    0.0
+-rifgen:rif_hbond_dump_fraction  0.0
+-rifgen:rif_apo_dump_fraction    0.0
+
+-add_orbitals
+
+-rifgen:beam_size_M 10000.0
+-rifgen:hash_preallocate_mult 0.125
+-rifgen:max_rf_bounding_ratio 4.0
+
+-rifgen:hash_cart_resls   16.0   8.0   4.0   2.0   1.0
+-rifgen:hash_cart_bounds   512   512   512   512   512
+-rifgen:lever_bounds      16.0   8.0   4.0   2.0   1.0
+-rifgen:hash_ang_resls     38.8  24.4  17.2  13.6  11.8 # yes worky works
+-rifgen:lever_radii        23.6 18.785501 13.324600  8.425850  4.855575
+
+-database /home/longxing/Rifdock/rosetta_rifdock/database

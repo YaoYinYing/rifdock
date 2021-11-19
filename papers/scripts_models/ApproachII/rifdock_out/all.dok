@@ -1,0 +1,15 @@
+rif score:    0 rank         0 dist0:      23.50 packscore: -21.499 score: -16.813 steric:  -3.314 bb-hbond:   0.000 cluster:       2 rifrank:  262868 0.14160 rifdock_out/HHH_b1_00224_000000000.pdb.gz
+rif score:    1 rank         1 dist0:      24.67 packscore: -21.071 score: -19.498 steric:  -4.501 bb-hbond:   0.000 cluster:      42 rifrank:   63253 0.03407 rifdock_out/HHH_b1_00224_000000001.pdb.gz
+rif score:    2 rank         2 dist0:      25.42 packscore: -20.914 score: -15.712 steric:  -2.490 bb-hbond:   0.000 cluster:      57 rifrank:  430290 0.23179 rifdock_out/HHH_b1_00224_000000002.pdb.gz
+rif score:    3 rank         4 dist0:      22.34 packscore: -20.306 score: -16.382 steric:  -0.195 bb-hbond:   0.000 cluster:       0 rifrank:  188259 0.10141 rifdock_out/HHH_b1_00224_000000003.pdb.gz
+rif score:    4 rank        10 dist0:      23.91 packscore: -19.708 score: -13.493 steric:  -3.016 bb-hbond:   0.000 cluster:       0 rifrank: 1071102 0.57698 rifdock_out/HHH_b1_00224_000000004.pdb.gz
+rif score:    5 rank        18 dist0:      25.06 packscore: -19.341 score: -14.443 steric:  -2.079 bb-hbond:   0.000 cluster:       2 rifrank:  638633 0.34402 rifdock_out/HHH_b1_00224_000000005.pdb.gz
+rif score:    6 rank        21 dist0:      25.73 packscore: -18.944 score: -12.782 steric:  -1.900 bb-hbond:   0.000 cluster:      99 rifrank: 1040205 0.56033 rifdock_out/HHH_b1_00224_000000006.pdb.gz
+rif score:    7 rank        32 dist0:      25.00 packscore: -18.690 score: -19.971 steric:  -3.382 bb-hbond:   0.000 cluster:      19 rifrank:   24148 0.01301 rifdock_out/HHH_b1_00224_000000007.pdb.gz
+rif score:    8 rank        43 dist0:      27.06 packscore: -18.487 score: -13.558 steric:  -0.600 bb-hbond:   0.000 cluster:       2 rifrank:  750482 0.40427 rifdock_out/HHH_b1_00224_000000008.pdb.gz
+rif score:    9 rank       113 dist0:      25.10 packscore: -17.713 score: -14.854 steric:  -2.007 bb-hbond:   0.000 cluster:       6 rifrank:  598656 0.32248 rifdock_out/HHH_b1_00224_000000009.pdb.gz
+rif score:   10 rank       139 dist0:      25.96 packscore: -17.454 score: -14.678 steric:  -1.207 bb-hbond:   0.000 cluster:      21 rifrank:  638280 0.34383 rifdock_out/HHH_b1_00224_000000010.pdb.gz
+rif score:   11 rank       157 dist0:      24.87 packscore: -17.267 score: -17.386 steric:  -1.884 bb-hbond:   0.000 cluster:      14 rifrank:  146092 0.07870 rifdock_out/HHH_b1_00224_000000011.pdb.gz
+rif score:   12 rank       188 dist0:      25.38 packscore: -16.876 score: -14.377 steric:  -1.484 bb-hbond:   0.000 cluster:       8 rifrank:  605602 0.32622 rifdock_out/HHH_b1_00224_000000012.pdb.gz
+rif score:   13 rank       270 dist0:      25.61 packscore: -14.894 score: -13.965 steric:  -2.109 bb-hbond:   0.000 cluster:       3 rifrank:  645599 0.34777 rifdock_out/HHH_b1_00224_000000013.pdb.gz
+rif score:   14 rank       282 dist0:      24.51 packscore: -12.988 score: -15.171 steric:   1.633 bb-hbond:   0.000 cluster:       1 rifrank:  339040 0.18263 rifdock_out/HHH_b1_00224_000000014.pdb.gz
